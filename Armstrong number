@@ -1,0 +1,28 @@
+import java.util.*;
+class Armstrong{
+    boolean check(int a)
+    {int n1=a;
+    int sum=0;
+    while(a>0)
+    {
+     int d=a%10;
+     sum=sum+(int)Math.pow(d,3);
+     a=a/10;
+    }
+        if(sum==n1)
+        return true;
+        else
+        return false;
+    }
+  
+  public static void main(String args[])
+  {Armstrong obj=new Armstrong();
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  if(obj.check(n))
+  System.out.println("Armstrong");
+  else
+  System.out.println("not Armstrong");
+      
+  }
+}
