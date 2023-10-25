@@ -1,0 +1,20 @@
+import java.util.*;
+class abc{
+    void checksqrt(int a)
+    {
+        if(Math.sqrt(a)==(int)Math.sqrt(a))
+        System.out.println("perfect square");
+        else if(Math.sqrt(a+1)==(int)Math.sqrt(a+1))
+        System.out.println("perfect square is close to 1");
+        else
+        System.out.println("false");
+    }
+    public static void main(String args[])
+    {Scanner sc=new Scanner(System.in);
+    abc obj=new abc();
+    int x=sc.nextInt();
+    obj.checksqrt(x);
+        
+    }
+        
+    }
