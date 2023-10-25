@@ -1,0 +1,33 @@
+import java.util.*;
+class armstrong{
+    boolean arm(int a){
+        int n=a;
+        int n1=a;
+        int c=0,sum=0;
+        while(n>0){
+            c++;
+            n=n/10;
+        }
+        int d=0;
+        while(a>0)
+        {d=a%10;
+        sum=sum+(int)Math.pow(d,c);
+        a=a/10;
+        }
+        if(n1==sum)
+        return true;
+        else
+        return false;
+        }
+        
+    public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            armstrong obj=new armstrong();
+            int x=sc.nextInt();
+            //System.out.println(obj.arm(x));
+            if(obj.arm(x))
+            System.out.println("armstrong");
+            else
+            System.out.println("not armstrong");
+        }
+}
